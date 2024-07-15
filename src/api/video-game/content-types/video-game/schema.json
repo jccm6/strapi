@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_games",
+  "info": {
+    "singularName": "video-game",
+    "pluralName": "video-games",
+    "displayName": "Video Game",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "stock": {
+      "type": "integer"
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "Cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Exist": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}
